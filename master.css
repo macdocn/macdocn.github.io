@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F7F7F7;
+  font-size: 0.8em;
+  font-family: "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  color:#2b3f55;
+}
+
+li{
+  list-style: none;
+}
+a{
+text-decoration: none;
+color:#2b3f55;
+}
+a:hover{
+    color:#ea4c89;
+}
+.header{
+  background-color: #fff;
+}
+.profile{
+  padding: 80px 0;
+}
+.links img{
+  width: 22px;
+  margin-right: 10px;
+}
+.links img:hover{
+  opacity: 0.5;
+}
+
+.profile, .info, .project-wrap, .footer{
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+.profile p{
+  margin:10px 0 10px;
+  line-height: 2.2em
+}
+.profile .links{
+  margin-top: 40px;
+}
+.profile h1{
+  font-weight:bolder;
+}
+.info{
+  display:flex;
+  padding: 70px 0;
+  justify-content: space-between;
+}
+.info h2{
+  font-size: 1.2em;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+.info li{
+  margin: 20px 0;
+}
+.info img{
+  width: 20px;
+  vertical-align: bottom;
+  margin-right: 3px;
+}
+
+.project-wrap h2{
+  margin-bottom: 30px;
+  font-size: 1.3em;
+}
+
+.projects {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project{
+  width: 350px;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 50px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 4px;
+}
+.projects h3{
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 1.3em;
+}
+.projects img{
+  width: 100%;
+}
+.projects p{
+  margin-bottom: 20px;
+  line-height: 2em;
+  font-weight: 200px;
+}
+.projects span{
+  font-weight: 200px;
+  margin-right: 15px;
+}
+
+.gold{
+  color: gold;
+}
+.green{
+  color: green;
+}
+footer{
+    margin: 50px auto;
+}
+footer p{
+    text-align: center;
+    color: #aaabab;
+}
+.triangle{
+    opacity: .5;
+    position: absolute;
+    width: 100px;
+    animation-name: float;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes float {
+    from{
+        transform: translate(-100px, 300px) rotate(0);
+    }
+    to{
+        transform: translate(700px, -50px)rotate(300deg);
+    }
+}
+@media (max-width:700px) {
+    .profile, .info, .project-wrap, .footer{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .info{
+      display: block;
+      padding: 70px 0;
+    }
+    .card{
+        margin-bottom: 50px;
+    }
+    .header, .project{
+        width: 100%;
+    }
+    @keyframes float {
+        from{
+            transform: translate(-100px, 300px) rotate(0);
+        }
+        to{
+            transform: translate(350px, -50px)rotate(300deg);
+        }
+}
