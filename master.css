@@ -156,6 +156,6 @@ footer p{
             transform: translate(-100px, 300px) rotate(0);
         }
         to{
-            transform: translate(350px, -50px)rotate(300deg);
+            transform: translate(300px, -50px)rotate(300deg);
         }
 }
